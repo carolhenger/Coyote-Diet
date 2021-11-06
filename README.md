@@ -50,14 +50,14 @@ After the database is created, use these steps below to analyze your sequences:
 Run the script by typing “./vertScript_pairedend.sh” (without quotes).  The ./ means that the script that you are running is in the same directory that you are currently in.  Alternatively, you can specify the entire path name.
  If you are denied permission, open up a new shell window (don’t activate obitools on it, but keep the other obitools window open) and type “chmod 777 ./vertScript_pairedend.sh” (without quotes).  This gives everyone permission to run the script.  You can also change who gets permission to run the program by changing the number associated with the chmod command.  You can find out more about it here:  https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/  
 
-Use cutadapt next, before annotating the samples
+11) Run the trim.sh script to use cutadapt program to trim primers from sequences. 
 
-11) Use the script vertScript_ann.sh to add the sample name to each file using the obiannotate command. This command individually labels each sample so that they can be distinguished after combining all of the samples into one file.  It also saves them into a separate folder called vertCat.  Changing the names of the files and/or directories each step allows you to redo the previous step if you make a mistake. Before running the script, edit the file so that it reflects your sample names and directories. 
+12) Use the script vertScript_ann.sh to add the sample name to each file using the obiannotate command. This command individually labels each sample so that they can be distinguished after combining all of the samples into one file.  It also saves them into a separate folder called vertCat.  Changing the names of the files and/or directories each step allows you to redo the previous step if you make a mistake. Before running the script, edit the file so that it reflects your sample names and directories. 
 
-12) In the non-obitools Terminal window, change the directory to the folder that contains the aligned files (for my samples it is vertCat).  Do not activate OBITools in this window.  Combine all of the aligned sequences into one file with the concatenate command: cat *.fastq > vert.fastq
+13) In the non-obitools Terminal window, change the directory to the folder that contains the aligned files (for my samples it is vertCat).  Do not activate OBITools in this window.  Combine all of the aligned sequences into one file with the concatenate command: cat *.fastq > vert.fastq
 This command will combine all fastq files in that directory into one fastq file called vert.fastq.
 
-13) The script called script.vertSteps.sh lists most of the commands used in obitools for all of the vertebrate sequences.  The only command that is not listed is the ngsfilter.  I didn’t use this command because the adapters and barcodes were already removed when I received the data.
+14) The script called script.vertSteps.sh lists most of the commands used in obitools for all of the vertebrate sequences.  The only command that is not listed is the ngsfilter.  I didn’t use this command because the adapters and barcodes were already removed when I received the data.
+Run the script by typing “./script.vertSteps.sh” (don’t type the quotations) in the obitools shell window.  
 
-14) Run the script by typing “./script.vertSteps.sh” (don’t type the quotations) in the obitools shell window.  
-15) Once the script is done running (should take 1-2 hours), you should have a txt file called vertCatAnn2.txt (or whatever name you decided to call the file).!
+15) Once the script is done running (should take 1-2 hours), you should have a txt file called vertCatAnn2.txt (or whatever name you decided to call the file).
