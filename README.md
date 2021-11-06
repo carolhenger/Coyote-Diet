@@ -60,6 +60,4 @@ This command will combine all fastq files in that directory into one fastq file 
 13) The script called script.vertSteps.sh lists most of the commands used in obitools for all of the vertebrate sequences.  The only command that is not listed is the ngsfilter.  I didn’t use this command because the adapters and barcodes were already removed when I received the data.
 
 14) Run the script by typing “./script.vertSteps.sh” (don’t type the quotations) in the obitools shell window.  
-15) Once the script is done running (should take 1-2 hours), you should have a txt file called vertCatAnn2.txt (or whatever name you decided to call the file).![image](https://user-images.githubusercontent.com/93494754/140622133-388b6038-fa70-4a6a-9d4a-3199edc781f5.png)
-
-![image](https://user-images.githubusercontent.com/93494754/140622111-d3c4ac7d-20e3-43ee-81db-eefc52bc61b0.png)
+15) Once the script is done running (should take 1-2 hours), you should have a txt file called vertCatAnn2.txt (or whatever name you decided to call the file).!
